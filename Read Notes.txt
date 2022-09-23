@@ -1,0 +1,13 @@
+I made a copy of the Ecommerce shop course (Elzero)
+the codes are till video number 128
+and changed it accordingly.
+only the newad.php has some problems
+some notes:
++ Change the root password and username in the connect.php file
+  I have two connection files: connection.php which I used mysqli method &
+  connect.php I used the PDO method , this is the one I am using & u must change 
+  the user and password variables in this files to yours.
++ There are some changes in the bootstrap commands from that typed in the video
+  I commented some of them , and why i changed them & the deprecated elements also.
++ there is a js function which is used to confirm the delete process , it is 
+  not functioning with me
