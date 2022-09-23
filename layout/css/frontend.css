@@ -1,0 +1,529 @@
+/*start main rules */
+body {
+    background-color: #020b1f;
+    font-size: 18px;
+    color: whitesmoke; 
+}
+h1{
+    font-size: 55px;
+    margin: 40px 0;
+    font-weight: bold;
+    color: #99efd4  ;
+  }
+  .input-container{
+      position: relative;
+  }
+
+  .card{
+    background-color: #0d1117;
+}
+
+/* .card-header{
+    background-color: black;
+} */
+
+.cart{
+    cursor: pointer;
+}
+.asterisk{
+    /* Elzero code  */
+    /* font-size: 30px;
+    position: absolute;
+    right: 30px;
+    top: 8px;
+    color: #D20707; */
+
+    /* my code */
+    font-size: 20px;
+    position: absolute;
+    right: 7px;
+    top: 0px;
+    color: #D20707;
+}
+.main-form{
+    position: absolute;
+}
+.main-form .asterisk{
+    /*  video num 99*/
+    /* Elzero code  */
+    /* font-size: 30px;
+    position: absolute;
+    right: 30px;
+    top: 8px;
+    color: #D20707; */
+    
+    /* my code */
+    font-size: 30px;
+    position: relative;
+    right: 20px;
+    top: -3px;
+    color: #D20707;
+}
+.nice-message{
+    padding: 10px;
+    background-color: #FFF;
+    margin: 10px 0;
+    border-left: 5px solid #080;
+}
+/*end of main rules*/
+
+
+/*start bootstrap edits*/
+.navbar {
+ border-radius: 0;
+ margin-bottom: 0;  
+}
+.nav > li > a , .navbar-brand{
+    padding: 15px , 12px ;
+}
+
+.navbar-brand {
+    font-size: 1em ; /* it means it taes 1 times the font-size of the page */
+   
+}
+.navbar-dark .navbar-nav .nav-link:focus, 
+.navbar-dark .navbar-nav .nav-link:hover,
+/* .navbar .navbar-nav > .open > a,
+.navbar .navbar-nav > .open > a :focus,
+.navbar .navbar-nav > .open > a :hover, */
+.dropdown-menu{
+background-color: #ec4468;
+}
+
+.dropdown-menu{
+min-width: 180px;
+padding: 0;
+font-size: 1em;
+border: none;
+border-radius: 0;
+}
+
+.dropdown-menu > li > a{
+    color:#FFF;
+    padding: 10px 15px;
+}
+
+.dropdown-menu > li > a:focus,
+.dropdown-menu > li > a:hover{
+    color: #FFF;
+    background-color: #0d1117;
+}
+
+
+.form-control, .form-control-lg{
+    /* i added  .form-control-lg , for modifing asteris */
+position: relative;
+}
+
+/*end bootstrap edits*/
+
+/* Start Header  Page */
+.upperBar{
+    height: 42px;   /* I added this property to make the upperBar height stable , because it was changing when there is session and when not*/
+    padding: 3px 0px 3px; /* myedit video num 85 */
+    background-color: #FFF;
+    color: green;
+}
+
+.my-image{
+    width: 40px;
+    height: 40px;
+}
+/* End Header Page */
+
+
+/* Start Login Page */
+.login-page form, 
+.the-errors{
+    max-width: 380px;
+    margin: auto;
+}
+.login-page form input{
+    margin-bottom: 10px;
+}
+.login-page [data-class="login"].selected{
+    color: #337AB7;
+}
+.login-page [data-class="signup"].selected{
+    color: #5cb85c;
+}
+.login-page h1{
+    color: #C0C0C0;
+}
+.login-page h1 span{
+cursor: pointer;
+}
+.login-page .signup{
+    display: none;
+}
+.the-errors{
+    padding: 10px;
+    text-align: left;
+    border-left: 5px solid #cd6858;
+    background-color: #fff;
+    margin-bottom:8px;
+    border-right: 1px solid #e0e0e0;
+    border-top: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+    color: #919191;
+}
+.the-errors .error{
+    border-left: 5px solid #cd6858;
+}
+/* End Login Page */
+
+/* start home page*/
+/* .item-pic img{
+max-width: 18rem;
+max-height: 18rem;
+} */
+
+
+.item-pic{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* end homepage */
+
+/* Start Categories Page */
+.item-card{
+    position:relative;
+}
+.item-card .price-tag{
+    background-color: #B4B4B4;
+    padding: 2px 10px;
+    position: absolute;
+    left: 0;
+    top:10px;
+    font-weight: bold;
+    color: #FFF;
+}
+.item-card .approve-status{
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background-color: #b85a5a;
+    color: #FFF;
+    padding: 3px 5px;
+}
+.item-card .caption p{
+    height: 44px;
+    max-height: 44px;
+}
+/* End Categories Page */
+
+
+/* Start profile Page */
+.block{
+    margin: 20px 0 0;
+}
+.information ul{
+    padding: 0;
+    margin: 0;
+}
+.information ul li{
+    padding:10px;
+}
+.information ul li:nth-child(odd){
+    background-color: #EEE;
+}
+.information ul li span{
+    display: inline-block;
+    width: 180px;
+}
+/***[.thumbnail img] My edit because the image was too big , and it was stretching out the card***/
+.thumbnail img, .item-pic img{
+    max-width: 260px;
+    max-height: 460px;
+}
+.thumbnail .date{
+    text-align: right;
+    font-size: 13px;
+    color: #AAA;
+    font-weight: bold;
+}
+.information .btn{
+    margin-top: 10px;
+}
+/* End Profile Page */
+
+/* Start Items Page  */
+.item-info h2{
+    padding: 10px;
+    margin: 0;
+}
+.item-info p{
+    padding: 10px;
+}
+.item-info ul li{
+    padding: 10px;
+}
+.item-info ul li:nth-child(odd){
+    background-color: #e8e8e8;
+}
+.item-info ul li span{
+    display: inline-block;
+    width: 180px;
+}
+.tags-items a{
+    display: inline-block;
+    background-color: #e2e2e2;
+    padding: 2px 10px;
+    border-radius: 5px;
+    color: #666;
+    margin-right: 5px;
+}
+.add-comment h3{
+    margin: 0 0 10px;
+}
+.add-comment textarea{
+    display:block;
+    margin-bottom: 10px;
+    width: 500px;
+    height: 120px;
+}
+.comment-box{
+   margin-bottom: 20px; 
+}
+.comment-box img{
+    max-width: 100px;
+    margin-bottom: 10px;
+    /*Replaced by  "center-block" class of bootstrap */
+     display: block;
+    margin: auto ; 
+}
+.comment-box .lead {
+    background-color: #e0e0e0;
+    position: relative;
+    padding: 10px;
+    margin-top: 25px;
+}
+.comment-box .lead:before {
+    content: "";
+    width: 0;
+    height: 0;
+    border-width: 15px;
+    border-style: solid;
+    border-color: transparent #e0e0e0 transparent transparent ;
+    position: absolute;
+    left: -28px;
+    top: 10px;
+}
+/* End Items Page  */
+
+
+/* Start our Custom */
+.custom-hr{
+    border-top: 1px solid #c9c9c9;
+}
+/* End of our Custom */
+
+
+
+/***********************************************************************************/
+
+
+
+
+/* Start Cart Page */
+
+
+* {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Robto' , sans-serif;
+}
+
+/* header{
+    background-image: url('../../pics/pharmacy1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 158px;
+    position: relative; 
+} */
+
+
+.pics{
+    background-image: url('../../pics/pharmacy3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 158px;
+    width: 100%;
+    position: relative; 
+}
+
+.overlay{
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    height: 100%;
+    right : 0;
+    bottom: 0;
+    padding :0 !important;
+    margin :0 !important;
+    background-color: rgba(10, 10, 10, 0.3);
+}
+
+.pics .containerNav{
+    position: absolute;
+    top: 0;
+    right : 0;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 50px 60px 0 60px;
+}
+
+.pics nav li{
+    list-style: none;
+    display: inline-block;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.pics nav li span{
+    padding-left: 5px;
+}
+
+.pics li a{
+padding: 5px;
+background-color: 020b1f;
+border-radius: 15px;
+text-decoration: none;
+}
+
+
+.cart ion-icon{
+    vertical-align: bottom;
+    font-size: 20px;
+    padding-right: 5px; 
+}
+.cart a {
+    background-color: royalblue;
+    border-radius: 15px;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.pics .products-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    padding-bottom: 100px;
+}
+
+.image{
+    margin-right: 20px;
+    margin-left: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.image img{
+    width: 240px;
+    height: 360px;
+}
+
+/* .add-cart{
+    position: absolute;
+    width: 100%;
+    background-color: darkgrey;
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+    cursor: pointer;
+    text-align: center;
+} */
+
+/* .image:hover .cart1{
+    bottom: 50px;
+    opacity: 1;
+    padding: 10px;
+    text-decoration: none;
+} */
+
+/************* Start Cart Page ****************/
+
+.products-container{
+    max-width: 650px;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.products-container ion-icon{
+    font-size: 25px;
+    color: blue;
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.product-header {
+    width: 100%;
+    max-width: 650px;
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 4px solid lightgray;
+    margin: 0 auto;
+}
+.product-tittle{
+    width: 45%;
+}
+.price{
+    width: 15%;
+    border-bottom: 4px solid lightgray; 
+    display: flex;
+    align-items: center;
+}
+.quantity{
+    width: 30%;
+    border-bottom: 4px solid lightgray;
+    display: flex;
+    align-items: center;
+}
+.total{
+    width: 10%;
+    border-bottom: 4px solid lightgray;
+    display: flex;
+    align-items: center;
+}
+.product{
+    width: 45%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 4px solid lightgray;
+}
+.product ion-icon{
+    cursor: pointer;
+}
+.products{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.products img{
+    width: 75px;
+}
+.basketTotalContainer{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 10px 0;
+}
+.basketTotalTittle{
+    width: 30%;
+}
+.basketTotal{
+    width: 10%;
+}
+
+/* End Cart Page */
